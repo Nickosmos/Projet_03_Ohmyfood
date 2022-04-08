@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<title>Titre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/normalize.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/20d853d314.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="css/Style.css" rel="stylesheet">
+		<title>Ohmyfood</title>
 	</head>
 
 	<body>
-		<Header>
-			<div>
-				<a>
-					<!-- image logo -->
+		<header>
+			<img src="images/ohmyfood.png" alt="Logo Ohmyfood" />
+		</header>
+		
+		<section id="S1">		<!-- section Recherche-->
+			<div id="formulaire">
+				<form method="post" action="#">
+					<input type="text" placeholder="<i class="fas fa-map-marker-alt"></i>Paris, Belleville" />
+				</form>
+				<h1>Réservez le menu qui vous convient</h1>
+				<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+				<button type="submit"> <span>Explorer nos restaurants</span></button>
+			</div>
+		</section> <!-- Fin de section 1-->
 
-				</a>
+		<section id="S2">			<!-- section Descriptif entreprise-->
+				<h1>Fonctionnement</h1>
+				<div class="Fontion">
+					<p>1</p>
+					<i class="fa-solid fa-mobile-screen-button"></i>
+					<p>Choisissez un restaurant</p>
+				</div>
+				<div class="Fonction">
+					<p>2</p>
+					<i class="fa-solid fa-list"></i>
+					<p>Composez votre menu</p>
+				</div>
+				<div class="Fonction">
+					<p>3</p>
+					<i class="fa-solid fa-store"></i>
+					<p>Déustez au restaurant</p>
+				</div>
+			</div>
+		</section> <!--Fin de section 2-->
+
+		<main id="S3">			<!-- section Restaurants-->
+			<h1>Restaurants</h1>			
+			<a href="#" class="card">
+				<img src="images/Palette_du_gout.jpg" alt="La palette du goût" />
+				<div class="infos">
+					<div>
+						<h2>La palette du goût</h2>
+						<p>Ménilmontant</p>
+					</div>
+					<i class="fa-thin fa-heart"></i>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<img src="images/Note_enchante.jpg" alt="La note enchantée" />
+				<div class="infos">
+					<div>
+						<h2>La note enchantée</h2>
+						<p>Charonne</p>
+					</div>
+					<i class="fa-thin fa-heart"></i>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<img src="images/A_la_francaise.jpg" alt="A la française" />
+				<div class="infos">
+					<div>
+						<h2>A la française</h2>
+						<p>Cité Rouge</p>
+					</div>
+					<i class="fa-thin fa-heart"></i>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<img src="images//Delice_des_sens.jpg" alt="Le délice des sens" />
+				<div class="infos">
+					<div>
+						<h2>Le délice des sens</h2>
+						<p>Folie-Méricourt</p>
+					</div>
+					<i class="fa-thin fa-heart"></i>
+				</div>
+			</a>
+		</main> <!--Fin de section 3-->
+
+		<footer>
+			<div>
+				<img src="images/ohmyfood.png" alt="Logo Ohmyfood" />
+				<ul>
+					<li> <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> </li>
+					<li> <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> </li>
+					<li> <a href="#">Mentions légales</a> </li>
+					<li> <a href="mailto:test@test.com">Contact</a> </li>
+				</ul>
 			</div>
 
-		</Header>
-		
-		
-
-		<p>Paragraphe 1<br />
-		suite du paragraphe</p>
-
-		<h2>Titre important</h2>
-
-		<p>Paragraphe 2</p>
-
+		</footer>
 	</body>
 </html>
