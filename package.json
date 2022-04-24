@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Dynamiser une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickosmos/Projet_Openclassrooms.git"
+  },
+  "author": "Nicolas MASSE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickosmos/Projet_Openclassrooms/issues"
+  },
+  "homepage": "https://github.com/Nickosmos/Projet_Openclassrooms#readme"
+}
