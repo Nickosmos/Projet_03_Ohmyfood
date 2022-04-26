@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/normalize.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/20d853d314.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 		<link href="css/Style.css" rel="stylesheet">
 		<title>Ohmyfood</title>
 	</head>
@@ -15,29 +15,32 @@
 			<img src="images/ohmyfood.png" alt="Logo Ohmyfood" />
 		</header>
 		
-		<section id="S1">		<!-- section Recherche-->
-			<div id="formulaire">
-				<form method="post" action="#">
-					<input type="text" placeholder="<i class="fas fa-map-marker-alt"></i>Paris, Belleville" />
-				</form>
-				<h1>Réservez le menu qui vous convient</h1>
-				<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-				<button type="submit"> <span>Explorer nos restaurants</span></button>
+		<section class="section">		<!-- section Recherche-->
+			<div class="section__form">
+				<div class="section__form__search">
+					<i class="fas fa-map-marker-alt"></i>
+					<p>Paris, Belleville</p>
+				</div>
+				<h1 class="bold">Réservez le menu qui vous convient</h1>
+				<p class="thin">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+				<button type="submit" class="btn"> <span>Explorer nos restaurants</span></button>
 			</div>
-		</section> <!-- Fin de section 1-->
+		</section> <!-- Fin de section -->
 
-		<section id="S2">			<!-- section Descriptif entreprise-->
-			<h1>Fonctionnement</h1>
-			<ul class="Fonction">
-				<li> <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
-				<li> <a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
-				<li> <a href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
-			</ul>
-		</section> <!--Fin de section 2-->
+		<section class="section">			<!-- section Descriptif entreprise-->
+			<h1 class="bold">Fonctionnement</h1>
+			<nav class="section__fonction">
+				<ul>
+					<li> <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
+					<li> <a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
+					<li> <a href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
+				</ul>
+			</nav>
+		</section> <!--Fin de section -->
 
-		<main id="S3">			<!-- section Restaurants-->
-			<h1>Restaurants</h1>			
-			<a href="#" class="card">
+		<main class="section">			<!-- section Restaurants-->
+			<h1 class="bold">Restaurants</h1>			
+			<a href="La_palette_du_gout.html" class="section__card">
 				<img src="images/Palette_du_gout.jpg" alt="La palette du goût" />
 				<div class="infos">
 					<div>
@@ -47,7 +50,7 @@
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="card">
+			<a href="#" class="section__card">
 				<img src="images/Note_enchante.jpg" alt="La note enchantée" />
 				<div class="infos">
 					<div>
@@ -57,7 +60,7 @@
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="card">
+			<a href="#" class="section__card">
 				<img src="images/A_la_francaise.jpg" alt="A la française" />
 				<div class="infos">
 					<div>
@@ -67,7 +70,7 @@
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="card">
+			<a href="#" class="section__card">
 				<img src="images//Delice_des_sens.jpg" alt="Le délice des sens" />
 				<div class="infos">
 					<div>
