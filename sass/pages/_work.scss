@@ -1,0 +1,24 @@
+.contain {
+    justify-content: space-between;
+    &__search {
+        flex-direction: row;
+        background-color: $color-accent;
+    }
+    &__heading {
+        margin: 5rem 0 5rem 1rem;
+        font-family: 'Roboto', sans-serif;
+        &--center {
+            text-align: center;
+            margin: 5rem 5rem 1rem 5rem;
+        }
+    }
+    &__byline {
+        margin: 0 2.5rem 2.5rem 2.5rem;
+    }
+    &__list {
+
+    }
+    &__img {
+        
+    }
+}

@@ -11,81 +11,83 @@
 	</head>
 
 	<body>
-		<header>
-			<img src="images/ohmyfood.png" alt="Logo Ohmyfood" />
+		<header class="header">
+			<img class="header__logo" src="public/images/ohmyfood.png" alt="Logo Ohmyfood" />
 		</header>
 		
-		<section class="section">		<!-- section Recherche-->
-			<div class="section__form">
-				<div class="section__form__search">
-					<i class="fas fa-map-marker-alt"></i>
-					<p>Paris, Belleville</p>
-				</div>
-				<h1 class="bold">Réservez le menu qui vous convient</h1>
-				<p class="thin">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-				<button type="submit" class="btn"> <span>Explorer nos restaurants</span></button>
+		<section class="contain">		<!-- section Recherche-->
+			<div class="contain__search">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Paris, Belleville</p>
 			</div>
+			<h1 class="contain__heading--center">Réservez le menu qui vous convient</h1>
+			<p class="contain__byline--center">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+			<button type="submit" class="btn"> <span>Explorer nos restaurants</span></button>
 		</section> <!-- Fin de section -->
 
-		<section class="section">			<!-- section Descriptif entreprise-->
-			<h1 class="bold">Fonctionnement</h1>
-			<nav class="section__fonction">
-				<ul>
-					<li> <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
-					<li> <a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
-					<li> <a href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
-				</ul>
-			</nav>
+		<section class="contain">			<!-- section Descriptif entreprise-->
+			<h1 class="contain__heading">Fonctionnement</h1>
+			<ul class="contain__list">
+				<li> <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
+				<li> <i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
+				<li> <i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
+			</ul>
 		</section> <!--Fin de section -->
 
-		<main class="section">			<!-- section Restaurants-->
-			<h1 class="bold">Restaurants</h1>			
-			<a href="La_palette_du_gout.html" class="section__card">
-				<img src="images/Palette_du_gout.jpg" alt="La palette du goût" />
-				<div class="infos">
-					<div>
-						<h2>La palette du goût</h2>
-						<p>Ménilmontant</p>
+		<main class="contain">			<!-- section Restaurants-->
+			<h1 class="contain__heading">Restaurants</h1>			
+			<a class="card" href="La_palette_du_gout.html">
+				<img src="public/images/Palette_du_gout.jpg" alt="La palette du goût" />
+				<div class="card__inline">
+					<p>Nouveau</p>
+				</div>
+				<div class="card__infos">
+					<div class="text">
+						<h2 class="text__heading">La palette du goût</h2>
+						<p class="text__byline">Ménilmontant</p>
 					</div>
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="section__card">
-				<img src="images/Note_enchante.jpg" alt="La note enchantée" />
-				<div class="infos">
-					<div>
-						<h2>La note enchantée</h2>
-						<p>Charonne</p>
+			<a class="card" href="#">
+				<img src="public/images/Note_enchante.jpg" alt="La note enchantée" />
+				<div class="card__inline">
+					<p>Nouveau</p>
+				</div>
+				<div class="card__infos">
+					<div class="text">
+						<h2 class="text__heading">La note enchantée</h2>
+						<p class="text__byline">Charonne</p>
 					</div>
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="section__card">
-				<img src="images/A_la_francaise.jpg" alt="A la française" />
-				<div class="infos">
-					<div>
-						<h2>A la française</h2>
-						<p>Cité Rouge</p>
+			<a class="card" href="#">
+				<img src="public/images/A_la_francaise.jpg" alt="A la française" />
+				<div class="card__infos">
+					<div class="text">
+						<h2 class="text__heading">A la française</h2>
+						<p class="text__byline">Cité Rouge</p>
 					</div>
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
-			<a href="#" class="section__card">
-				<img src="images//Delice_des_sens.jpg" alt="Le délice des sens" />
-				<div class="infos">
-					<div>
-						<h2>Le délice des sens</h2>
-						<p>Folie-Méricourt</p>
+			<a class="card" href="#">
+				<img src="public/images//Delice_des_sens.jpg" alt="Le délice des sens" />
+				<div class="card__infos">
+					<div class="text">
+						<h2 class="text__heading">Le délice des sens</h2>
+						<p class="text__byline">Folie-Méricourt</p>
 					</div>
 					<i class="fa-thin fa-heart"></i>
 				</div>
 			</a>
 		</main> <!--Fin de section 3-->
 
-		<footer>
+		<footer class="footer">
 			<div>
-				<img src="images/ohmyfood.png" alt="Logo Ohmyfood" />
-				<ul>
+				<img class="footer__logo" src="public/images/ohmyfood.png" alt="Logo Ohmyfood" />
+				<ul class="footer__list">
 					<li> <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> </li>
 					<li> <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> </li>
 					<li> <a href="#">Mentions légales</a> </li>
