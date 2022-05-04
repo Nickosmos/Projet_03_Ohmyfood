@@ -6,7 +6,7 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/20d853d314.js" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
-		<link href="css/Style.css" rel="stylesheet">
+		<link href="public/css/style.css" rel="stylesheet">
 		<title>Ohmyfood</title>
 	</head>
 
@@ -17,71 +17,77 @@
 		
 		<section class="contain">		<!-- section Recherche-->
 			<div class="contain__search">
-				<i class="fas fa-map-marker-alt"></i>
-				<p>Paris, Belleville</p>
+				<div class="contain__search__input">
+					<i class="fas fa-map-marker-alt"></i>
+					<p class="contain__search__place">Paris, Belleville</p>
+				</div>
+				<h1 class="contain__heading--center">Réservez le menu qui vous convient</h1>
+				<p class="contain__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+				<button type="submit" class="btn"> <span>Explorer nos restaurants</span></button>
 			</div>
-			<h1 class="contain__heading--center">Réservez le menu qui vous convient</h1>
-			<p class="contain__byline--center">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-			<button type="submit" class="btn"> <span>Explorer nos restaurants</span></button>
 		</section> <!-- Fin de section -->
 
 		<section class="contain">			<!-- section Descriptif entreprise-->
-			<h1 class="contain__heading">Fonctionnement</h1>
-			<ul class="contain__list">
-				<li> <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
-				<li> <i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
-				<li> <i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
-			</ul>
+			<div class="contain__function">
+				<h1 class="contain__heading">Fonctionnement</h1>
+				<ol class="contain__function__list">
+					<li> <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
+					<li> <i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
+					<li> <i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
+				</ol>
+			</div>
 		</section> <!--Fin de section -->
 
 		<main class="contain">			<!-- section Restaurants-->
-			<h1 class="contain__heading">Restaurants</h1>			
-			<a class="card" href="La_palette_du_gout.html">
-				<img src="public/images/Palette_du_gout.jpg" alt="La palette du goût" />
-				<div class="card__inline">
-					<p>Nouveau</p>
-				</div>
-				<div class="card__infos">
-					<div class="text">
-						<h2 class="text__heading">La palette du goût</h2>
-						<p class="text__byline">Ménilmontant</p>
+			<div class="contain__rest">
+				<h1 class="contain__heading">Restaurants</h1>			
+				<a class="card" href="La_palette_du_gout.html">
+					<img class="card__img" src="public/images/Palette_du_gout.jpg" alt="La palette du goût" />
+					<div class="card__inline">
+						<p>Nouveau</p>
 					</div>
-					<i class="fa-thin fa-heart"></i>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<img src="public/images/Note_enchante.jpg" alt="La note enchantée" />
-				<div class="card__inline">
-					<p>Nouveau</p>
-				</div>
-				<div class="card__infos">
-					<div class="text">
-						<h2 class="text__heading">La note enchantée</h2>
-						<p class="text__byline">Charonne</p>
+					<div class="card__infos">
+						<div class="text">
+							<h2 class="text__heading">La palette du goût</h2>
+							<p class="text__byline">Ménilmontant</p>
+						</div>
+						<i class="fa-thin fa-heart"></i>
 					</div>
-					<i class="fa-thin fa-heart"></i>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<img src="public/images/A_la_francaise.jpg" alt="A la française" />
-				<div class="card__infos">
-					<div class="text">
-						<h2 class="text__heading">A la française</h2>
-						<p class="text__byline">Cité Rouge</p>
+				</a>
+				<a class="card" href="#">
+					<img class="card__img" src="public/images/Note_enchante.jpg" alt="La note enchantée" />
+					<div class="card__inline">
+						<p>Nouveau</p>
 					</div>
-					<i class="fa-thin fa-heart"></i>
-				</div>
-			</a>
-			<a class="card" href="#">
-				<img src="public/images//Delice_des_sens.jpg" alt="Le délice des sens" />
-				<div class="card__infos">
-					<div class="text">
-						<h2 class="text__heading">Le délice des sens</h2>
-						<p class="text__byline">Folie-Méricourt</p>
+					<div class="card__infos">
+						<div class="text">
+							<h2 class="text__heading">La note enchantée</h2>
+							<p class="text__byline">Charonne</p>
+						</div>
+						<i class="fa-thin fa-heart"></i>
 					</div>
-					<i class="fa-thin fa-heart"></i>
-				</div>
-			</a>
+				</a>
+				<a class="card" href="#">
+					<img class="card__img" src="public/images/A_la_francaise.jpg" alt="A la française" />
+					<div class="card__infos">
+						<div class="text">
+							<h2 class="text__heading">A la française</h2>
+							<p class="text__byline">Cité Rouge</p>
+						</div>
+						<i class="fa-thin fa-heart"></i>
+					</div>
+				</a>
+				<a class="card" href="#">
+					<img class="card__img" src="public/images//Delice_des_sens.jpg" alt="Le délice des sens" />
+					<div class="card__infos">
+						<div class="text">
+							<h2 class="text__heading">Le délice des sens</h2>
+							<p class="text__byline">Folie-Méricourt</p>
+						</div>
+						<i class="fa-thin fa-heart"></i>
+					</div>
+				</a>
+			</div>
 		</main> <!--Fin de section 3-->
 
 		<footer class="footer">
