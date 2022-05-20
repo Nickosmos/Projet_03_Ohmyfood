@@ -30,11 +30,11 @@
 		<section class="contain">			<!-- section Descriptif entreprise-->
 			<div class="contain__function">
 				<h1 class="contain__heading">Fonctionnement</h1>
-				<ol class="contain__function__list">
-					<li> <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a> </li>
-					<li> <i class="fa-solid fa-list"></i>Composez votre menu</a> </li>
-					<li> <i class="fa-solid fa-store"></i>Dégustez au restaurant</a> </li>
-				</ol>
+				<ul class="contain__function__list">
+					<li href="" class="contain__function__list__item"> <i class="fas fa-mobile-alt"></i><span class="contain__function__list__item__text">Choisissez un restaurant</span></a> </li>
+					<li href="" class="contain__function__list__item"> <i class="fas fa-list"></i><span class="contain__function__list__item__text">Composez votre menu</span></a> </li>
+					<li href="" class="contain__function__list__item"> <i class="fas fa-store"></i><span class="contain__function__list__item__text">Dégustez au restaurant</span></a> </li>
+				</ul>
 			</div>
 		</section> <!--Fin de section -->
 
@@ -43,59 +43,64 @@
 				<h1 class="contain__heading">Restaurants</h1>			
 				<a class="card" href="La_palette_du_gout.html">
 					<img class="card__img" src="public/images/Palette_du_gout.jpg" alt="La palette du goût" />
-					<div class="card__inline">
-						<p>Nouveau</p>
-					</div>
+					<span class="card__inline">Nouveau </span>
 					<div class="card__infos">
-						<div class="text">
-							<h2 class="text__heading">La palette du goût</h2>
-							<p class="text__byline">Ménilmontant</p>
+						<div class="card__infos__text">
+							<h2 class="card__infos__text__heading">La palette du goût</h2>
+							<p class="card__infos__text__byline">Ménilmontant</p>
 						</div>
-						<i class="fa-thin fa-heart"></i>
+						<div class="card__infos__heart">
+							<i class="far fa-heart vide"></i>
+							<i class="fas fa-heart plein"></i>
+						</div>
 					</div>
 				</a>
-				<a class="card" href="#">
+				<a class="card" href="La_note_enchantee.html">
 					<img class="card__img" src="public/images/Note_enchante.jpg" alt="La note enchantée" />
-					<div class="card__inline">
-						<p>Nouveau</p>
-					</div>
+					<span class="card__inline">Nouveau </span>
 					<div class="card__infos">
-						<div class="text">
-							<h2 class="text__heading">La note enchantée</h2>
-							<p class="text__byline">Charonne</p>
+						<div class="card__infos__text">
+							<h2 class="card__infos__text__heading">La note enchantée</h2>
+							<p class="card__infos__text__byline">Charonne</p>
 						</div>
-						<i class="fa-thin fa-heart"></i>
+						<div class="card__infos__heart">
+							<i class="far fa-heart"></i>
+						</div>
 					</div>
 				</a>
-				<a class="card" href="#">
+				<a class="card" href="A_la_francaise.html">
 					<img class="card__img" src="public/images/A_la_francaise.jpg" alt="A la française" />
 					<div class="card__infos">
-						<div class="text">
-							<h2 class="text__heading">A la française</h2>
-							<p class="text__byline">Cité Rouge</p>
+						<div class="card__infos__text">
+							<h2 class="card__infos__text__heading">À la française</h2>
+							<p class="card__infos__text__byline">Cité Rouge</p>
 						</div>
-						<i class="fa-thin fa-heart"></i>
+						<div class="card__infos__heart">
+							<i class="far fa-heart"></i>
+						</div>
 					</div>
 				</a>
-				<a class="card" href="#">
+				<a class="card" href="Le_delice_des_sens.html">
 					<img class="card__img" src="public/images//Delice_des_sens.jpg" alt="Le délice des sens" />
 					<div class="card__infos">
-						<div class="text">
-							<h2 class="text__heading">Le délice des sens</h2>
-							<p class="text__byline">Folie-Méricourt</p>
+						<div class="card__infos__text">
+							<h2 class="card__infos__text__heading">Le délice des sens</h2>
+							<p class="card__infos__text__byline">Folie-Méricourt</p>
 						</div>
-						<i class="fa-thin fa-heart"></i>
+						<div class="card__infos__heart">
+							<i class="far fa-heart"></i>
+						</div>
 					</div>
 				</a>
 			</div>
 		</main> <!--Fin de section 3-->
 
 		<footer class="footer">
-			<div>
-				<img class="footer__logo" src="public/images/ohmyfood.png" alt="Logo Ohmyfood" />
-				<ul class="footer__list">
-					<li> <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a> </li>
-					<li> <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a> </li>
+			<div class="footer__contain">
+				<img class="footer__contain__logo" src="public/images/ohmyfood.png" alt="Logo Ohmyfood" />
+				<ul class="footer__contain__list">
+					<li> <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a> </li>
+					<li> <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a> </li>
 					<li> <a href="#">Mentions légales</a> </li>
 					<li> <a href="mailto:test@test.com">Contact</a> </li>
 				</ul>

@@ -1,5 +1,5 @@
-@mixin heading-shadow($color:lightness-shift($color-primary), $offset: $heading-shadow-size){
-    text-shadow: $offset $offset $colour;
+@mixin shadow {
+    box-shadow: 4px 4px 4px #e6e6e6;
 }
 
 @mixin border($color:$color-primary) {
@@ -25,18 +25,14 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    width: 60%;
+    width: 50%;
     height: 40px;
-    margin-left: 20%;
+    margin: 30px 25% 40px 25%;
     border-radius: 20px;
     border-style: none;
+    @include shadow;
     cursor: pointer;
     &:hover{
-        background: $color-primary;
-        color: $color-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
+        filter: brightness(125%);
     }
 }
