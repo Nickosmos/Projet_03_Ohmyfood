@@ -1,0 +1,9 @@
+.spinner {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: grey;
+    opacity: 0;
+    animation: opacity_spinner 3s linear;
+}

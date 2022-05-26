@@ -1,0 +1,23 @@
+@keyframes delay_items{
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes opacity_spinner{
+    0% {
+        opacity: 0.8;
+        z-index: 1;
+    }
+    50% {
+        opacity: 0.4;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}

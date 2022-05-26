@@ -31,26 +31,42 @@
         &__text {
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 80%;
             &__heading {
             margin: 10px 0 5px 10px;
             }
             &__byline {
             margin: 0 0 10px 10px;
+            color: black;
             }
         }
         &__heart {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 30%;
-            i .plein {
-                display: none;
+            width: 20%;
+            transition: opacity 0.3s;
+            i {
+                position: relative;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
             }
-            i:hover {
-                
-                color: linear-gradient(to top right, $color-secondary, $color-primary);
-                cursor: pointer;
+            i.plein {
+                position: absolute;
+                opacity: 0;
+                color: #9c47fc;
+                background: -webkit-linear-gradient($color-secondary, $color-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &__heart:hover {
+            i.plein {
+                opacity: 1;
+            }
+            i.vide {
+                opacity: 0;
             }
         }
     }
