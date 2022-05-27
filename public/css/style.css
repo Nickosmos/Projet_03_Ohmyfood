@@ -20,6 +20,14 @@
     z-index: 1;
   }
 }
+@keyframes circles {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -130,7 +138,7 @@ button {
   position: absolute;
   opacity: 0;
   color: #9c47fc;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -212,6 +220,63 @@ button {
     transform: rotate(360deg);
   }
 }
+.spinner {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  line-height: 100vh;
+  position: fixed;
+  background-color: grey;
+  font-family: "Shrikhand";
+  font-size: 30px;
+  text-align: center;
+  color: #9356DC;
+  opacity: 0;
+  animation: opacity_spinner 3s linear;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+  position: relative;
+}
+
+.loader-circles {
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #9356DC;
+  animation: circles 1s linear infinite;
+}
+
+.loader-circles::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #FF79DA;
+  animation: circles 1.5s linear infinite;
+}
+
+.loader-circles::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: #9356DC;
+  animation: circles 2s linear infinite;
+}
+
 .header {
   height: 50px;
   display: flex;
@@ -272,16 +337,6 @@ button {
 }
 .footer__contain__list i {
   margin-right: 8px;
-}
-
-.spinner {
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background-color: grey;
-  opacity: 0;
-  animation: opacity_spinner 3s linear;
 }
 
 .contain {
@@ -397,13 +452,6 @@ button {
   width: 90%;
   margin: 25px 5% 0 5%;
 }
-.menu__carte__resto i {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 5%;
-  font-size: 18px;
-}
 .menu__carte__choix {
   display: flex;
   flex-direction: column;
@@ -416,6 +464,33 @@ button {
   margin-left: 7%;
   margin-top: 20px;
   border-bottom: 3px solid #99e2d0;
+}
+.menu__carte__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  transition: opacity 0.3s;
+}
+.menu__carte__heart i {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.menu__carte__heart i.plein {
+  position: absolute;
+  opacity: 0;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__carte__heart:hover i.plein {
+  opacity: 1;
+}
+.menu__carte__heart:hover i.vide {
+  opacity: 0;
 }
 .menu .delay1 {
   animation: delay_items 0.2s 0.2s linear both;

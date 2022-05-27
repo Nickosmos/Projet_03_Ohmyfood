@@ -56,7 +56,7 @@
                 position: absolute;
                 opacity: 0;
                 color: #9c47fc;
-                background: -webkit-linear-gradient($color-secondary, $color-primary);
+                background: -webkit-linear-gradient(90deg, $color-secondary, $color-primary);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }

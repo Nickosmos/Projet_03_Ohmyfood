@@ -110,13 +110,6 @@
             justify-content: space-between;
             width: 90%;
             margin: 25px 5% 0 5%;
-            i {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                margin-right: 5%;
-                font-size: 18px;
-            }
         }
         &__choix {
             display: flex;
@@ -130,8 +123,37 @@
                 margin-top: 20px;
                 border-bottom: 3px solid #99e2d0 ;
             }
-
         }
+        &__heart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            transition: opacity 0.3s;
+            i {
+                position: relative;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+            }
+            i.plein {
+                position: absolute;
+                opacity: 0;
+                color: #9c47fc;
+                background: -webkit-linear-gradient(90deg, $color-secondary, $color-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &__heart:hover {
+            i.plein {
+                opacity: 1;
+            }
+            i.vide {
+                opacity: 0;
+            }
+        }
+
 
     }
     .delay1 {
