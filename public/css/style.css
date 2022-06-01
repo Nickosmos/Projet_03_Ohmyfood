@@ -1,6 +1,6 @@
 @keyframes delay_items {
   0% {
-    transform: scale(0);
+    transform: scale(1, 0);
   }
   100% {
     transform: scale(1);
@@ -26,6 +26,14 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes delay_heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 body {
@@ -70,11 +78,12 @@ button {
   margin: 30px 25% 40px 25%;
   border-radius: 20px;
   border-style: none;
-  box-shadow: 4px 4px 4px #e6e6e6;
+  box-shadow: 4px 4px 4px grey;
   cursor: pointer;
 }
 .btn:hover {
   filter: brightness(125%);
+  box-shadow: 4px 4px 4px black;
 }
 
 .card {
@@ -97,7 +106,7 @@ button {
   position: absolute;
   top: 8%;
   right: 5%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   padding: 5px 10px 5px 10px;
   font-size: 14px;
   font-weight: 600;
@@ -126,7 +135,6 @@ button {
   justify-content: center;
   align-items: center;
   width: 20%;
-  transition: opacity 0.3s;
 }
 .card__infos__heart i {
   position: relative;
@@ -139,6 +147,7 @@ button {
   opacity: 0;
   color: #9c47fc;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -149,7 +158,14 @@ button {
   opacity: 0;
 }
 
+.card:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .text {
+  display: flex;
+  overflow: hidden;
   position: relative;
   width: 90%;
   height: 60px;
@@ -157,7 +173,8 @@ button {
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: white;
-  box-shadow: 4px 4px 4px #e6e6e6;
+  padding-right: 1rem;
+  box-shadow: 4px 4px 4px grey;
 }
 .text__heading {
   font-size: 16px;
@@ -165,61 +182,54 @@ button {
   margin: 10px 10px 5px 10px;
 }
 .text__plus {
-  display: flex;
   flex-direction: row;
   width: 95%;
   justify-content: space-between;
+  flex: 1;
 }
 .text__plus__byline {
   font-size: 14px;
   font-weight: 300;
   margin: 0 0 0 10px;
 }
-.text__plus__price {
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-}
-.text__anim-check {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: #99e2d0;
-  height: 100%;
-  width: 10%;
-  border-radius: 0 10px 10px 0;
-  transform: rotate(-180deg);
-  transition-duration: 0.5s;
-}
-.text__anim-check i {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-  font-size: 18px;
-  color: white;
-}
-.text:hover .text__plus__price {
-  padding-right: 10%;
+.text:hover .text__anim-icone {
+  transform: rotate(0);
 }
 .text:hover .text__anim-check {
-  display: block;
-  transform: rotate(0deg);
+  margin-right: -1rem;
 }
-.text:hover .text__anim-check i > .check {
-  /* transform: rotate(360deg);
-  animation-name: check;
-  animation-duration: 2s;*/
+.text__anim-check {
+  background-color: #99E2D0;
+  margin-top: -1rem;
+  margin-right: -5rem;
+  margin-bottom: -1rem;
+  margin-left: 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.6s;
+}
+.text__anim-check .green {
+  color: #99E2D0;
+}
+.text__anim-icone {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(-180deg);
+  transition-duration: 0.6s;
+}
+.text__price {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 18px 2% 0 0;
 }
 
-@keyframes check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .spinner {
   z-index: -1;
   width: 100vw;
@@ -360,6 +370,10 @@ button {
   margin-left: 1rem;
   font-weight: 450;
 }
+.contain a {
+  text-decoration: none;
+  box-shadow: 4px 4px 4px grey;
+}
 .contain__function {
   height: 380px;
 }
@@ -387,10 +401,10 @@ button {
   width: 87%;
   height: 60px;
   background-color: #F6F6F6;
+  color: black;
   border-radius: 12px;
   margin-left: 8%;
   margin-bottom: 10px;
-  box-shadow: 4px 4px 4px #e6e6e6;
 }
 .contain__function__list__item__text {
   display: flex;
@@ -422,9 +436,6 @@ button {
 .contain__byline {
   text-align: center;
   margin: 0 40px 30px 40px;
-}
-.contain a {
-  text-decoration: none;
 }
 
 .menu {
@@ -463,7 +474,7 @@ button {
   font-weight: 400;
   margin-left: 7%;
   margin-top: 20px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
 }
 .menu__carte__heart {
   display: flex;
@@ -484,6 +495,7 @@ button {
   color: #9c47fc;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu__carte__heart:hover i.plein {

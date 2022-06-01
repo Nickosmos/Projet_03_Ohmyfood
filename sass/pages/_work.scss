@@ -18,6 +18,10 @@
             font-weight: 450;
         }
     }
+    a {
+        text-decoration: none;
+        @include shadow;
+    }
     &__function {
         height: 380px;
         &__list {
@@ -44,10 +48,10 @@
                 width: 87%;
                 height: 60px;
                 background-color: $color-backgrey;
+                color: black;
                 border-radius: 12px;
                 margin-left: 8%;
                 margin-bottom: 10px;
-                @include shadow;
                 &__text {
                     display: flex;
                     font-size: 14px;
@@ -82,9 +86,6 @@
     &__byline {
         text-align: center;
         margin: 0 40px 30px 40px;
-    }
-    a {
-        text-decoration: none;
     }
 }
 
@@ -121,7 +122,7 @@
                 font-weight: 400;
                 margin-left: 7%;
                 margin-top: 20px;
-                border-bottom: 3px solid #99e2d0 ;
+                border-bottom: 3px solid $color-tertiary ;
             }
         }
         &__heart {
@@ -142,6 +143,7 @@
                 color: #9c47fc;
                 background: -webkit-linear-gradient(90deg, $color-secondary, $color-primary);
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -153,8 +155,6 @@
                 opacity: 0;
             }
         }
-
-
     }
     .delay1 {
         animation: delay_items 0.2s 0.2s linear both;

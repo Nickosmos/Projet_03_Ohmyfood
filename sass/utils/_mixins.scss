@@ -1,16 +1,5 @@
 @mixin shadow {
-    box-shadow: 4px 4px 4px #e6e6e6;
-}
-
-@mixin border($color:$color-primary) {
-    border: .1rem solid $colour;
-}
-
-@mixin check {
-        transform: scaleX(0.8);
-        & anim-check {
-            display: contents;
-        }
+    box-shadow: 4px 4px 4px grey;
 }
 
 @mixin btn {
@@ -26,6 +15,7 @@
     cursor: pointer;
     &:hover{
         filter: brightness(125%);
+        box-shadow: 4px 4px 4px black;
     }
 }
 

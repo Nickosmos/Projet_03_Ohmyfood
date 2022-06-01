@@ -17,7 +17,7 @@
         position:absolute;
         top: 8%;
         right: 5%;
-        background-color: #99e2d0;
+        background-color: $color-tertiary;
         padding: 5px 10px 5px 10px;
         font-size: 14px;
         font-weight: 600;
@@ -45,7 +45,6 @@
             justify-content: center;
             align-items: center;
             width: 20%;
-            transition: opacity 0.3s;
             i {
                 position: relative;
                 text-decoration: none;
@@ -57,6 +56,7 @@
                 opacity: 0;
                 color: #9c47fc;
                 background: -webkit-linear-gradient(90deg, $color-secondary, $color-primary);
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -69,5 +69,11 @@
                 opacity: 0;
             }
         }
+    }
+}
+.card:hover {
+    img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
     }
 }

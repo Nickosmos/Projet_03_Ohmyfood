@@ -1,4 +1,6 @@
 .text {
+    display: flex;
+    overflow: hidden;
     position: relative;
     width: 90%;
     height: 60px;
@@ -6,6 +8,7 @@
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: white;
+    padding-right: 1rem;
     @include shadow;
     &__heading {
         font-size: 16px;
@@ -13,63 +16,56 @@
         margin: 10px 10px 5px 10px;
     }
     &__plus {
-        display: flex;
         flex-direction: row;
         width: 95%;
         justify-content: space-between;
+        flex: 1;
         &__byline {
             font-size: 14px;
             font-weight: 300;
             margin: 0 0 0 10px;
         }
-        &__price {
-            font-size: 14px;
-            font-weight: 500;
-            margin: 0;
-        }
     }
-    &__anim-check {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 0;
-        background-color: #99e2d0;
-        height: 100%;
-        width: 10%;
-        border-radius: 0 10px 10px 0;
-        transform: rotate(-180deg);
-        transition-duration: 0.5s;
-        i {
-            display: flex;
-            justify-content: center;
-            margin-top: 22px;
-            font-size: 18px;
-            color: white;
-        }
-    }
-    &:hover {
-        .text__plus__price {
-            padding-right: 10%;
-        }
-        .text__anim-check {
-            display: block;
-            transform: rotate(0deg);
-        }
-        .text__anim-check i {
-            & > .check {
-                /* transform: rotate(360deg);
-                animation-name: check;
-                animation-duration: 2s;*/
-            }
-        }
-    }
-}
 
-@keyframes check{
-    0% {
-        transform: rotate(0deg);
+    &:hover .text__anim-icone {
+        transform: rotate(0);
+      }
+      &:hover .text__anim-check {
+        margin-right: -1rem;
+      }
+
+      &__anim-check{
+        background-color: $color-tertiary;
+        margin-top: -1rem;
+        margin-right: -5rem;
+        margin-bottom: -1rem;
+        margin-left: 1rem;
+        width: 4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: .6s;
+
+        & .green{
+            color: $color-tertiary;
+        }
     }
-    100% {
-        transform: rotate(360deg);
+	
+	    &__anim-icone{
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(-180deg);
+        transition-duration: 0.6s;
+    }
+
+    &__price {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 18px 2% 0 0;
     }
 }

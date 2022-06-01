@@ -1,6 +1,6 @@
 @keyframes delay_items{
     0% {
-        transform: scale(0);
+        transform: scale(1, 0);
     }
     100% {
         transform: scale(1);
@@ -25,4 +25,13 @@
 @keyframes circles{
     0%{ transform: rotate(0deg);}
     100%{ transform: rotate(360deg);}
+}
+
+@keyframes delay_heart{
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
