@@ -75,7 +75,7 @@ button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 50%;
   height: 40px;
-  margin: 30px 25% 40px 25%;
+  margin: 30px 25% 60px 25%;
   border-radius: 20px;
   border-style: none;
   box-shadow: 4px 4px 4px grey;
@@ -167,9 +167,8 @@ button {
   display: flex;
   overflow: hidden;
   position: relative;
-  width: 90%;
   height: 60px;
-  margin-left: 5%;
+  margin: 0 5% 0 5%;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: white;
@@ -191,6 +190,12 @@ button {
   font-size: 14px;
   font-weight: 300;
   margin: 0 0 0 10px;
+}
+.text:hover .text__heading, .text:hover .text__plus__byline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 73%;
 }
 .text:hover .text__anim-icone {
   transform: rotate(0);
@@ -357,7 +362,7 @@ button {
 }
 .contain__search {
   background-color: #F6F6F6;
-  height: 340px;
+  height: 320px;
 }
 .contain__search__input {
   display: flex;
@@ -385,13 +390,13 @@ button {
 .contain__function__list__item::before {
   counter-increment: monCompteur;
   content: counter(monCompteur) " ";
-  height: 20px;
+  height: 18px;
   width: 20px;
   border-radius: 10px;
   background-color: #9356DC;
   font-size: 14px;
   color: white;
-  padding-top: 3px;
+  padding-top: 2px;
   text-align: center;
   margin-left: -10px;
 }
@@ -404,7 +409,7 @@ button {
   color: black;
   border-radius: 12px;
   margin-left: 8%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .contain__function__list__item__text {
   display: flex;
@@ -435,7 +440,7 @@ button {
 }
 .contain__byline {
   text-align: center;
-  margin: 0 40px 30px 40px;
+  margin: 0 40px 0 40px;
 }
 
 .menu {

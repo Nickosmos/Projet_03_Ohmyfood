@@ -5,7 +5,7 @@
     width: 100%;
     &__search {
         background-color: $color-backgrey;
-        height: 340px;
+        height: 320px;
         &__input {
         display: flex;
         flex-direction: row;
@@ -31,13 +31,13 @@
             &__item::before {
                 counter-increment: monCompteur;
                 content: counter(monCompteur) " ";
-                height: 20px;
+                height: 18px;
                 width: 20px;
                 border-radius: 10px;
                 background-color: $color-primary;
                 font-size: 14px;
                 color: white;
-                padding-top: 3px;
+                padding-top: 2px;
                 text-align: center;
                 margin-left: -10px;
 
@@ -51,7 +51,7 @@
                 color: black;
                 border-radius: 12px;
                 margin-left: 8%;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 &__text {
                     display: flex;
                     font-size: 14px;
@@ -85,7 +85,7 @@
     }
     &__byline {
         text-align: center;
-        margin: 0 40px 30px 40px;
+        margin: 0 40px 0 40px;
     }
 }
 
